@@ -124,17 +124,17 @@ function App() {
         </thead>
         <tbody>
           {data.map((row, index) => (
-            <tr key={index}>
+            <tr style={{border: '1px solid black'}} key={index}>
               {row.map((cell, cellIndex) => (
-                <td key={cellIndex}>{cell}</td>
+                <td  key={cellIndex}>{cell}</td>
               ))}
             </tr>
           ))}
         </tbody>
       </table>
-      <button onClick={longestWorkingPair} >Click me</button>
+      <button onClick={longestWorkingPair} style={{marginTop: '22px', padding: '12px 36px', fontSize:'1.2rem'}} >Find</button>
 
-      <p>Longest working pair: {longestPair}</p>
+      <p style={{fontSize:'2rem'}}>Longest working pair: {longestPair}</p>
     </div>
   );
 }
